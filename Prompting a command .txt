@@ -1,0 +1,85 @@
+1. Our teacher asked us to make a revised version of this website https://www.dlsjbc.edu.ph/ and create an HTML, CSS, and JavaScript website inspired by it with an animation challenge.
+
+2. The animation challenge includes:
+- Hover Effects
+- Button Animations
+- Card Hover
+- Image Zoom
+- Smooth Scroll
+- Loading Screen
+- Dark Mode Toggle
+
+3. This project was created as a school assignment to produce a similar website with improved design and functionality while keeping the content structure close to the original site.
+4. Use the green-and-white color scheme for links and design, and make sure the content and visuals remain similar to the original site while improving the layout and user experience.
+
+5. Photos mapping and assignments (Photos folder -> where to insert):
+
+- Global site logo:
+	- Photos/dlsjbc-logo.png -> used in the nav brand across pages (index.html, about.html, articles.html, contact.html, admissions.html, home pages). Keep the <img src="Photos/dlsjbc-logo.png" alt="DLSJBC logo"> markup in each page header.
+
+- Articles feed and article pages (script.js `articleFeed` array inserts these into the Articles page and article cards):
+	- Photos/Articles/𝐀𝐃𝐌𝐈𝐒𝐒𝐈𝐎𝐍 𝐅𝐎𝐑 𝐒𝐘 𝟐𝟎𝟐𝟒-𝟐𝟎𝟐𝟓 𝐈𝐒 𝐍𝐎𝐖 𝐎𝐍𝐆𝐎𝐈𝐍𝐆.jpg -> admission-2024-2025.html (article entry `admission-2024-2025`)
+	- Photos/Articles/Alumni Homecoming 2024.jpg -> alumni-homecoming-2024.html (article entry `alumni-homecoming-2024`)
+	- Photos/Articles/𝙍𝙚𝙖𝙙𝙮 𝙩𝙤 𝙬𝙧𝙞𝙩𝙚 𝙩𝙝𝙚 𝙣𝙚𝙭𝙩 𝙘𝙝𝙖𝙥𝙩𝙚𝙧 𝙤𝙛 𝙮𝙤𝙪𝙧 𝙖𝙘𝙖𝙙𝙚𝙢𝙞𝙘 𝙟𝙤𝙪𝙧𝙣𝙚𝙮.jpg -> pre-enrollment-2024.html (article `pre-enrollment-2024`)
+	- Photos/Articles/DLSJBC Science Teachers in their benchmarking activity at CSU.jpg -> science-benchmarking.html (article `science-benchmarking`)
+	- Photos/Articles/𝐆𝐑𝐄𝐄𝐍 𝐀𝐍𝐃 𝐁𝐑𝐈𝐆𝐇𝐓.jpg -> green-and-bright.html (article `green-and-bright`)
+	- Photos/Articles/𝐓𝐨𝐤𝐲𝐨 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐈𝐦𝐦𝐞𝐫𝐬𝐢𝐨𝐧.jpg -> tokyo-educational-immersion.html (article `tokyo-educational-immersion`)
+	- Photos/Articles/60th ANNIVERSARY CULMINATION.jpg -> 60th-anniversary-culmination.html (article `60th-anniversary-culmination`)
+	- Photos/Articles/September 2023 Licensure Examination for Teachers (LET).jpg -> let-2023.html (article `let-2023`)
+	- Photos/Articles/lasallian-ambassadors-2024.jpg -> lasallian-ambassadors-2024.html (article `lasallian-ambassadors-2024`)
+	- Photos/Articles/Academia The Lasallian Socials 2023.jpg -> academia-socials-2023.html (article `academia-socials-2023`)
+	- Photos/Articles/Experience Quality Lasallian Education.jpg -> quality-lasallian-education.html (article `quality-lasallian-education`)
+	- Photos/Articles/Summer Sports Clinic and Enrichment Classes.jpg -> summer-sports-clinic.html (article `summer-sports-clinic`)
+	- Photos/Articles/alumni.jpg -> senior-high-school-plus.html (article `senior-high-school-plus`) (used as the article image for SHS Plus entry)
+	- Photos/Articles/c19ea6_c4c77d35941a424dae80c26ba922baba~mv2.jpg -> (used where a fallback or small article thumbnail is referenced in feed)
+
+- About page images:
+	- Photos/About/Dls-jbc_edited.avif and Photos/About/bd91d4_dbae781d60934ddab8f7a3a3af0d529c~mv2.avif -> used on about.html hero and about/visual sections. Update <img src="Photos/About/Dls-jbc_edited.avif"> where hero or header image is expected.
+
+- Home / Hero images (home slideshow and hero sections):
+	- Photos/home/* (examples: admission-sy-2024-2025-now-ongoing.jpg, Alumni Homecoming 2024.jpg, 𝐀𝐃𝐌𝐈𝐒𝐒𝐈𝐎𝐍 𝐅𝐎𝐑 𝐒𝐘 𝟐𝟎𝟐𝟒-𝟐𝟎𝟐𝟓 𝐈𝐒 𝐍𝐎𝐖 𝐎𝐍𝐆𝐎𝐈𝐍𝐆.jpg) -> used in the index hero slideshow and major callouts.
+
+- Activities and Contact-specific images:
+	- Photos/Activities/* -> used in pages that highlight campus activities. Insert into activity galleries or section-level <img> or background-image rules.
+	- Photos/Contact/bd91d4_551929a2108044e0a1f6f38d88108044~mv2.avif -> used on contact.html (map or contact visual)
+
+6. Implementation notes (how to insert / verify):
+
+- HTML: keep or add <img src="Photos/<subfolder>/<filename>" alt="..."> where visual assets should appear. Use relative paths exactly as the project structure contains (case-sensitive on some servers).
+
+- JavaScript: the articles feed is generated from `script.js` (`articleFeed` array). Ensure each `image` property in `articleFeed` points to the correct Photos/Articles/<filename> string (already present in `script.js`). To add or update an article image, edit the `articleFeed` entry `image` field and place the file in `Photos/Articles/`.
+
+- CSS: for background images use `background-image: url("Photos/<subfolder>/<filename>");` and prefer `background-size: cover;` for hero areas. If adding new CSS rules, reference the same Photos path.
+
+7. Prompt to automate verification or to give to a generative tool (copy/paste):
+
+"Ensure the website uses the image assets from the local Photos folder at `C:\\Users\\Ronnie\\Desktop\\DLSJBC Website\\Photos`. Map each asset to its insertion point:
+
+- Global nav logo -> Photos/dlsjbc-logo.png, used in nav across all HTML pages.
+- Article feed images -> each filename under Photos/Articles/ must match the corresponding article `id` page (e.g., '60th ANNIVERSARY CULMINATION.jpg' -> '60th-anniversary-culmination.html'). Update `script.js` `articleFeed` image values if filenames change.
+- About images -> Photos/About/* used in about.html hero and about sections.
+- Home hero/slideshow -> Photos/home/* used in index.html hero slideshow.
+- Contact visuals -> Photos/Contact/* used in contact.html.
+- Activities/gallery -> Photos/Activities/* used where activity galleries are shown.
+
+Verify these by scanning HTML files for <img> tags and `script.js` feed entries and confirm each referenced filename exists under the Photos folder. If a referenced filename is missing, report which page and which filename is missing so the asset can be copied into `Photos`.
+"
+
+8. Additional notes:
+
+- The `script.js` file already generates the Articles feed and slideshow from `articleFeed`. Do not hardcode article images in the HTML `articles.html` feed — rely on `script.js` `articleFeed` entries.
+- File names that contain spaces or special characters are used as-is in `articleFeed`. Prefer renaming large batches to a normalized format (kebab-case) if you plan to host on a case-sensitive server, but do not change names now unless you also update `script.js` paths.
+- If you update or move photos, keep the same relative path from the project root: `Photos/<subfolder>/<filename>`.
+
+- Design uniqueness / anti-clone:
+	- To discourage exact cloning, introduce intentional, small randomized variations such as shuffled hero slideshow order, swapped accent colors via CSS variables, slight layout offsets, alternative image crops, or build-time filename permutations. Document these choices so the site remains maintainable while reducing the chance of perfect clones.
+
+9. The rest of the original functional requirements (slideshow, auto-resize, dark mode toggle, smooth scroll, hover effects) remain in place; ensure image sizes are suitable for responsive breakpoints and add responsive `srcset` or CSS rules if needed.
+
+10. Delivery checklist:
+
+- Confirm every `Photos/Articles/*` filename listed in `script.js` exists in that folder.
+- Confirm `Photos/dlsjbc-logo.png` exists and is referenced in each page header.
+- Update any missing files into `Photos/` and re-run a local preview to verify slides and article cards.
+
+End of mapping update."

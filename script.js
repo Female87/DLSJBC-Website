@@ -132,7 +132,7 @@ const articleFeed = [
     id: "pre-enrollment-2024",
     title: "Ready to write the next chapter of your academic journey",
     summary: "The pre-enrollment campaign helps young learners and parents prepare for a meaningful school year ahead.",
-    image: "Photos/Articles/𝙍𝙚𝙖𝙙𝙮 𝙩𝙤 𝙬𝙧𝙞𝙩𝙚 𝙩𝙝𝙚 𝙣𝙚𝙭𝙩 𝙘𝙝𝙖𝙥𝙩𝙖𝙧 𝙤𝙛 𝙮𝙤𝙪𝙧 𝙖𝙘𝙖𝙙𝙚𝙢𝙦𝙖𝙣𝙛𝙤𝙪𝙣𝙣𝙚𝙖𝙮.jpg",
+    image: "Photos/Articles/ready-to-write-next-chapter.jpg",
     tag: "Enrollment"
   },
   {

@@ -117,12 +117,11 @@ body.dark-mode .topbar {
 .brand-mark {
   width: 46px;
   height: 46px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  font-weight: 800;
-  color: white;
-  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  object-fit: contain;
+  display: block;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
 }
 
 .brand h1 {

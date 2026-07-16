@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DLSJBC Inspired Campus Showcase</title>
+    <meta
+      name="description"
+      content="An animated and responsive school website concept inspired by De La Salle John Bosco College."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-card">
+        <div class="loader"></div>
+        <p>Preparing the campus experience...</p>
+      </div>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">D</div>
+        <div>
+          <h1>De La Salle John Bosco College</h1>
+          <p>Inspired campus portal</p>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span>☀️</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="news-slideshow-container" id="newsSlideshow">
+          <div class="news-slide active">
+            <img
+              src="https://static.wixstatic.com/media/c19ea6_b85655940b4d43fa92e380e30d446a5e~mv2.jpg/v1/fill/w_1600,h_900,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c19ea6_b85655940b4d43fa92e380e30d446a5e~mv2.jpg"
+              alt="Campus admission banner"
+            />
+            <div class="slide-overlay">
+              <p class="eyebrow">Admission spotlight</p>
+              <h2>Enrollment for the new academic year is now open.</h2>
+              <a class="btn btn-light" href="#admissions">Apply now</a>
+            </div>
+          </div>
+
+          <div class="news-slide">
+            <img
+              src="https://static.wixstatic.com/media/c19ea6_c938fe1d14a2434a8bd3196546195c18~mv2.jpg/v1/fill/w_1600,h_900,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c19ea6_c938fe1d14a2434a8bd3196546195c18~mv2.jpg"
+              alt="Alumni homecoming celebration"
+            />
+            <div class="slide-overlay">
+              <p class="eyebrow">Community celebration</p>
+              <h2>Reconnect with alumni and celebrate school pride.</h2>
+              <a class="btn btn-light" href="#news">See stories</a>
+            </div>
+          </div>
+
+          <div class="news-slide">
+            <img
+              src="https://static.wixstatic.com/media/c19ea6_12cb0406f4ca4b73ac1cd5632a4a8f0c~mv2.jpg/v1/fill/w_1600,h_900,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c19ea6_12cb0406f4ca4b73ac1cd5632a4a8f0c~mv2.jpg"
+              alt="Student success and academic journey"
+            />
+            <div class="slide-overlay">
+              <p class="eyebrow">Academic journey</p>
+              <h2>Students are prepared to write the next chapter with confidence.</h2>
+              <a class="btn btn-light" href="#about">Learn more</a>
+            </div>
+          </div>
+
+          <div class="news-slide">
+            <img
+              src="https://static.wixstatic.com/media/c19ea6_fb8c347bbf59408790e400c1043420ae~mv2.jpg/v1/fill/w_1600,h_900,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c19ea6_fb8c347bbf59408790e400c1043420ae~mv2.jpg"
+              alt="Science teachers on academic benchmarking"
+            />
+            <div class="slide-overlay">
+              <p class="eyebrow">Committed to excellence</p>
+              <h2>Innovative teaching and strong partnerships shape the future.</h2>
+              <a class="btn btn-light" href="#calendar">View events</a>
+            </div>
+          </div>
+
+          <button class="slide-btn prev" data-direction="prev" aria-label="Previous slide">❮</button>
+          <button class="slide-btn next" data-direction="next" aria-label="Next slide">❯</button>
+          <button class="fullscreen-btn" id="fullscreenBtn" aria-label="Toggle fullscreen">⤢</button>
+
+          <div class="slide-dots" aria-label="Slide navigation"></div>
+        </div>
+      </section>
+
+      <section class="container intro-grid" id="about">
+        <article class="card spotlight-card">
+          <p class="eyebrow">Our mission</p>
+          <h3>Developing compassionate, innovative, and service-driven Lasallians.</h3>
+          <p>
+            DLSJBC continues to provide educational excellence, leadership, and
+            faith-based guidance for every student who walks through its doors.
+          </p>
+          <a class="btn btn-green" href="#contact">Meet the college</a>
+        </article>
+
+        <article class="card stat-card">
+          <div class="stat">
+            <strong>4+</strong>
+            <span>Academic programs</span>
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>Campus support</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Student-centered approach</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="container section-block" id="admissions">
+        <div class="section-heading">
+          <p class="eyebrow">Admissions</p>
+          <h3>Step into a future shaped by excellence.</h3>
+        </div>
+        <div class="card-grid">
+          <article class="card feature-card">
+            <h4>Pre-enrollment</h4>
+            <p>Reserve your place and receive guidance from our admissions team.</p>
+            <a class="btn btn-green" href="#contact">Inquire now</a>
+          </article>
+          <article class="card feature-card">
+            <h4>Scholarships</h4>
+            <p>Explore financial support opportunities for deserving scholars.</p>
+            <a class="btn btn-green" href="#contact">Check eligibility</a>
+          </article>
+          <article class="card feature-card">
+            <h4>Campus Life</h4>
+            <p>Join extracurricular programs, service initiatives, and community events.</p>
+            <a class="btn btn-green" href="#news">Discover more</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section-block" id="news">
+        <div class="section-heading">
+          <p class="eyebrow">Latest updates</p>
+          <h3>Stories that celebrate learning, growth, and community.</h3>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <img
+              class="image-zoom"
+              src="https://static.wixstatic.com/media/c19ea6_b85655940b4d43fa92e380e30d446a5e~mv2.jpg/v1/fill/w_600,h_350,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c19ea6_b85655940b4d43fa92e380e30d446a5e~mv2.jpg"
+              alt="Admission banner"
+            />
+            <div class="news-card-content">
+              <h4>Admission for SY 2024-2025 is now ongoing</h4>
+              <p>Future Lasallians are invited to explore programs and begin their journey.</p>
+              <a href="#admissions">Read more</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img
+              class="image-zoom"
+              src="https://static.wixstatic.com/media/c19ea6_c938fe1d14a2434a8bd3196546195c18~mv2.jpg/v1/fill/w_600,h_350,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c19ea6_c938fe1d14a2434a8bd3196546195c18~mv2.jpg"
+              alt="Alumni homecoming"
+            />
+            <div class="news-card-content">
+              <h4>Alumni Homecoming 2024</h4>
+              <p>A warm and spirited evening of nostalgia, connection, and celebration.</p>
+              <a href="#news">View latest</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img
+              class="image-zoom"
+              src="https://static.wixstatic.com/media/c19ea6_12cb0406f4ca4b73ac1cd5632a4a8f0c~mv2.jpg/v1/fill/w_600,h_350,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c19ea6_12cb0406f4ca4b73ac1cd5632a4a8f0c~mv2.jpg"
+              alt="Academic journey"
+            />
+            <div class="news-card-content">
+              <h4>Ready to write the next chapter?</h4>
+              <p>Students are empowered to pursue meaningful, future-ready education.</p>
+              <a href="#about">Explore vision</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section-block calendar-section" id="calendar">
+        <div class="section-heading">
+          <p class="eyebrow">Academic calendar</p>
+          <h3>Upcoming milestones and events.</h3>
+        </div>
+        <div class="calendar-card">
+          <ul>
+            <li><span>May 1</span> Labor Day</li>
+            <li><span>May 4</span> HMTM Pinning Ceremony</li>
+            <li><span>May 10</span> 2nd Trimester Honors Convocation</li>
+            <li><span>May 24</span> Baccalaureate Mass and Commencement Exercises</li>
+            <li><span>May 31</span> NSTP Graduation and Completion Ceremony</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container footer-wrap">
+        <div>
+          <h3>De La Salle John Bosco College</h3>
+          <p>De La Salle Drive, Mangagoy, Bislig City, Surigao del Sur</p>
+        </div>
+        <div>
+          <a class="btn btn-light" href="mailto:info@dlsjbc.edu.ph">Email us</a>
+          <a class="btn btn-light" href="https://www.facebook.com/dlsjbc" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
